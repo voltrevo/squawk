@@ -10,6 +10,7 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "denoland.vscode-deno",
   "deno.suggest.imports.hosts": {
-    "https://raw.githubusercontent.com": false
+    "https://raw.githubusercontent.com": false,
+    "https://deno.land": true
   }
 }
