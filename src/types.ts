@@ -12,12 +12,6 @@ export const Proposal = tb.Object({
   value: tb.string,
 });
 
-export const ProposalMsg = tb.Object({
-  sendTime: tb.number,
-  playerId: tb.string,
-  value: tb.string,
-});
-
 export const ActiveRound = tb.Object({
   startTime: tb.number,
   proposals: tb.Array(Proposal),
@@ -39,6 +33,7 @@ export const Team = tb.Object({
 });
 
 export const Game = tb.Object({
+  stateId: tb.number,
   players: tb.Array(Player),
   teams: tb.Array(Team),
 });
